@@ -72,3 +72,38 @@ color: #154444;
 padding: 15px 25px;
 background-color: #fff;
 }
+
+.companies {
+margin-top: 140px;
+}
+.companies__title {
+text-align: center;
+font-weight: 700;
+font-size: 32px;
+color: #244d4d;
+margin-bottom: 40px;
+}
+.companies__icon {
+display: flex;
+justify-content: center;
+gap: 100px;
+}
+
+.benefits__col {
+display: flex;
+}
+.benefits__left {
+position: relative;
+}
+.benefits__left img {
+position: relative;
+z-index: 10;
+}
+.benefits__behaind {
+position: absolute;
+top: 26px;
+left: 0;
+width: 631px;
+height: 586px;
+background-color: #dee4e2;
+}

@@ -88,4 +88,49 @@ a{
 }
 
 
+.companies{
+    margin-top: 140px;
+
+
+    &__title{
+        text-align: center;
+        font-weight: 700;
+        font-size: 32px;
+        color: #244d4d;
+        margin-bottom: 40px;
+    }
+    &__icon{
+        display: flex;
+        justify-content: center;
+        gap: 100px;
+        
+
+    }
+}
+
+
+.benefits{
+    &__col{
+        display: flex;
+    }
+
+    &__left{
+        position: relative;
+
+        & img{
+            position: relative;
+            z-index: 10;
+        }
+    }
+    &__behaind{
+        position: absolute;
+        top: 26px;
+        left: 0;
+        width: 631px;
+        height: 586px;
+        background-color: #dee4e2;
+    }
+}
+
+
 
