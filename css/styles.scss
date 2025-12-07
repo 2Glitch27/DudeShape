@@ -76,6 +76,7 @@ a{
         line-height: 125%;
         color: #fff;
         width: 68%;
+        margin: 20px 0 35px 0;
     }
     &__btn{
         display: inline-block;
@@ -112,6 +113,7 @@ a{
 .benefits{
     &__col{
         display: flex;
+        margin-top: 140px;
     }
 
     &__left{
@@ -130,6 +132,44 @@ a{
         height: 586px;
         background-color: #dee4e2;
     }
+    
+    &__title{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 125%;
+        color: #244d4d;
+    }
+    &__desc{
+        line-height: 125%;
+        color: #444;
+    }
+    &__right{
+        margin: 46px 0 0 135px;
+    }
+    &__box__row{
+        display: flex;
+    } 
+    &__box__col{
+        margin-left: 28px;
+    }
+    &__box__title{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        line-height: 130%;
+        color: #244d4d;
+        margin: 35px 0 14px 0;
+    }
+
+    &__box__desc{
+        font-size: 18px;
+        line-height: 144%;
+        color: #383738;
+    }
+
+
+
+    
 }
 
 
