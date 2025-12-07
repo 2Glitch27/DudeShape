@@ -31,24 +31,23 @@ color: #244d4d;
 }
 .header__menu {
 display: flex;
-gap: 50px;
+gap: 80px;
+}
+.header__link {
+font-size: 16px;
+color: #161616;
+}
+.header__link:hover {
+opacity: 0.6;
 }
 .header__nav {
 display: flex;
 gap: 30px;
 }
 
-.menu-link {
-font-size: 16px;
-color: #161616;
-}
-
-.menu-link:hover {
-opacity: 0.6;
-}
-
 .aside__col {
 display: flex;
+height: 560px;
 }
 .aside__right {
 background-color: #154444;
