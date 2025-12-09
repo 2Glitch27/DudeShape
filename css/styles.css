@@ -115,6 +115,7 @@ font-weight: 700;
 font-size: 32px;
 line-height: 125%;
 color: #244d4d;
+margin-bottom: 20px;
 }
 .benefits__desc {
 line-height: 125%;
@@ -140,4 +141,80 @@ margin: 35px 0 14px 0;
 font-size: 18px;
 line-height: 144%;
 color: #383738;
+}
+
+.catalog {
+margin-top: 140px;
+}
+.catalog__upper {
+margin-bottom: 89px;
+}
+.catalog__title {
+font-family: "Montserrat", sans-serif;
+font-weight: 700;
+font-size: 32px;
+line-height: 150%;
+color: #242424;
+text-align: center;
+}
+.catalog__menu {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 100px;
+}
+.catalog__item {
+font-size: 24px;
+line-height: 113%;
+color: #919090;
+}
+.catalog__left {
+position: relative;
+}
+.catalog__left img {
+position: relative;
+z-index: 10;
+}
+.catalog__below {
+display: flex;
+justify-content: space-between;
+}
+.catalog__left {
+margin-left: 12px;
+}
+.catalog__behaind--top {
+width: 190px;
+height: 85px;
+background-color: #154444;
+position: absolute;
+top: -9px;
+left: -12px;
+}
+.catalog__behaind--bottom {
+width: 190px;
+height: 85px;
+background-color: #154444;
+position: absolute;
+bottom: -10px;
+right: -11px;
+}
+
+.hero__row {
+display: flex;
+margin-top: 166px;
+justify-content: space-between;
+}
+.hero__left {
+position: relative;
+}
+.hero__img {
+position: absolute;
+z-index: 10;
+left: 105px;
+}
+.hero__behaind {
+width: 492px;
+height: 492px;
+border-radius: 50%;
+background-color: #244d4d;
 }
