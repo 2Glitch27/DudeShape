@@ -231,24 +231,33 @@ a{
 
    
 
-    // &__col{
+    &__col{
         
-    //     display: flex;
-    //      flex-wrap: wrap;
-    //     margin: -15px;
+        display: flex;
+         flex-wrap: wrap;
+        margin: -15px;
     //      display: grid;
     // gap: 15px;
-        
+       
+    }
 
-    // }
-    // &__container{
-    //      width: 50%;
-    //     padding: 15px;
+    &__ww {
+        width: 50%;
+        padding: 15px;
+        box-sizing: border-box;
+       
+    }
+
+    &__container{
+          width: 222px;
+height: 90px;
+        
+        // padding: 15px;
     //   display: grid;
     //    grid-template-columns: 1fr 1fr;
        
         
-    // }
+    }
 
 
 }
@@ -258,7 +267,7 @@ a{
     &__row{
         display: flex;
         margin-top: 166px;
-        justify-content: space-between;
+        
     }
 
     &__left{
