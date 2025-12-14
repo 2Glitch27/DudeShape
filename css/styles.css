@@ -18,6 +18,10 @@ width: 100%;
 margin: 0 auto;
 }
 
+p {
+margin: 0;
+}
+
 .header__row {
 display: flex;
 justify-content: space-between;
@@ -211,6 +215,20 @@ box-sizing: border-box;
 .catalog__container {
 width: 222px;
 height: 90px;
+background-color: white;
+border: 1.5px solid #d9dce5;
+}
+.catalog__container:hover {
+background-color: #154444;
+}
+.catalog__container:hover .catalog__text {
+color: #fff;
+}
+.catalog__container:hover .catalog__img {
+color: #fff;
+}
+.catalog__text {
+color: #808080;
 }
 
 .hero__row {
@@ -230,4 +248,94 @@ width: 492px;
 height: 492px;
 border-radius: 50%;
 background-color: #244d4d;
+}
+.hero__right {
+padding: 105px 0 195px 172px;
+box-sizing: border-box;
+}
+.hero__title {
+font-family: "Monoton", sans-serif;
+font-size: 32px;
+line-height: 150%;
+color: #242424;
+}
+.hero__desc {
+padding: 20px 0 40px;
+line-height: 135%;
+}
+.hero__user {
+display: flex;
+}
+.hero__name {
+padding-left: 10px;
+box-sizing: border-box;
+font-size: 16px;
+}
+.hero__name p {
+font-size: 14px;
+}
+
+.subscribe__row {
+background-color: #f4f6f6;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.subscribe__title {
+font-family: "Montserrat", sans-serif;
+font-weight: 700;
+font-size: 32px;
+line-height: 150%;
+text-align: center;
+color: #222;
+padding: 68px 0 20px;
+}
+.subscribe__desc {
+font-size: 16px;
+line-height: 150%;
+text-align: center;
+color: #222;
+padding-bottom: 40px;
+}
+.subscribe__form {
+padding-bottom: 55px;
+}
+.subscribe__register {
+background-color: #fff;
+padding: 9px 19px 7px 45px;
+}
+.subscribe__input {
+border: none;
+outline: none;
+font-size: 16px;
+line-height: 138%;
+color: #bababa;
+padding-right: 81px;
+}
+.subscribe__register {
+position: relative;
+}
+.subscribe__bf:before {
+content: url("../img/subscribe.svg");
+position: absolute;
+top: 50%;
+left: 17px;
+transform: translateY(-50%);
+}
+.subscribe__btn {
+font-weight: 500;
+font-size: 16px;
+line-height: 138%;
+color: #fff;
+background: #305f64;
+padding: 15px 33px 15px 31px;
+border: none;
+}
+
+.footer {
+background-color: #305f64;
+}
+.footer__top {
+display: flex;
 }

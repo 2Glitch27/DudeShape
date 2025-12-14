@@ -16,6 +16,9 @@ a{
     width: 100%;
     margin: 0 auto;
 }
+p{
+    margin: 0;
+}
 
 .header{
     &__row{
@@ -245,19 +248,44 @@ a{
         width: 50%;
         padding: 15px;
         box-sizing: border-box;
+        
        
     }
 
     &__container{
-          width: 222px;
-height: 90px;
-        
+        width: 222px;
+        height: 90px;
+        background-color: white;
+        border: 1.50px solid #d9dce5;
         // padding: 15px;
     //   display: grid;
     //    grid-template-columns: 1fr 1fr;
        
         
     }
+
+    
+
+
+    &__container:hover{
+        .catalog__text{
+        color: #fff;
+        }
+        .catalog__img{
+           color: #fff; 
+        }
+
+        
+        background-color: #154444;
+    }
+
+    
+
+
+    &__text{
+        color: #808080;
+    }
+    
 
 
 }
@@ -267,6 +295,7 @@ height: 90px;
     &__row{
         display: flex;
         margin-top: 166px;
+        
         
     }
 
@@ -288,6 +317,115 @@ height: 90px;
 
     }
 
+    &__right{
+       padding: 105px 0 195px 172px;
+       box-sizing: border-box;
+    }
+    &__title{
+        font-family: "Monoton", sans-serif;
+        font-size: 32px;
+        line-height: 150%;
+        color: #242424;
+    }
+    &__desc{
+        padding: 20px 0 40px;
+        line-height: 135%;
+    }
+
+    &__user{
+        display: flex;
+
+    }
+
+    &__name{
+        padding-left: 10px;
+        box-sizing: border-box;
+        font-size: 16px;
+        p{
+            font-size: 14px;
+        }
+    }
+
 
 }
+
+.subscribe{
+    &__row{
+        background-color:  #f4f6f6;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__title{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 150%;
+        text-align: center;
+        color: #222;
+        padding: 68px 0 20px;
+    
+    }
+
+    &__desc{
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+        color: #222;
+        padding-bottom: 40px;
+    }
+    &__form{
+        padding-bottom: 55px;
+    }
+    &__register{
+        background-color: #fff;
+        padding: 9px 19px 7px 45px;
+        
+    }
+    &__input{
+        border: none;
+        outline: none;
+        font-size: 16px;
+        line-height: 138%;
+        color: #bababa;
+        padding-right: 81px;
+       
+
+    }
+    &__register{
+        position: relative;
+    }
+ 
+    &__bf:before{
+        content:url("../img/subscribe.svg");
+        position: absolute;
+        top: 50%;
+        left: 17px;
+        transform: translateY(-50%);
+        
+    }
+
+    &__btn{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 138%;
+        color: #fff;
+        background: #305f64;
+        padding: 15px 33px 15px 31px;
+        border: none;
+
+    }
+}
+
+
+
+.footer{
+    background-color:  #305f64;
+    &__top{
+        display: flex;
+    }
+
+}
+
 
