@@ -401,3 +401,21 @@ font-size: 18px;
 color: #fff;
 padding: 20px;
 }
+
+.popular__container {
+display: flex;
+flex-wrap: wrap;
+margin: -15px;
+}
+.popular__col {
+width: 33.3%;
+box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.07);
+}
+.popular__bottom {
+box-sizing: border-box;
+padding: 30px 54px 26px 24px;
+}
+.popular__line {
+display: flex;
+justify-content: space-between;
+}
