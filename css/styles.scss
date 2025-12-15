@@ -5,6 +5,7 @@ body{
 ul{
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 a{
@@ -25,6 +26,7 @@ p{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding: 44px 0 26px;
         
     }
     &__logo{
@@ -185,6 +187,7 @@ p{
         line-height: 150%;
         color: #242424;
         text-align: center;
+        padding-bottom: 20px;
     }
     &__menu{
         display: flex;
@@ -422,10 +425,79 @@ p{
 
 .footer{
     background-color:  #305f64;
+    margin-top: 98px;
     &__top{
         display: flex;
+        padding: 100px 0 40px;
+        justify-content: space-between;
+    }
+  
+
+    &__logo{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        font-size: 24px;
+        color: #fff;
+        padding-bottom: 24px;
+    }
+    &__desc{
+        font-size: 18px;
+        line-height: 144%;
+        color: #fff;
+        padding-bottom: 40px;
     }
 
+    &__col--title{
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        line-height: 130%;
+        color: #fff;
+        padding-bottom: 24px;
+    }
+
+    &__link{
+        font-size: 18px;
+        color: #fff;
+    }
+
+    &__img{
+        display: flex;
+        gap: 15px;
+    }
+
+    &__input{
+        border: none;
+        outline: none;
+        padding: 14px 70px 13px 22px;
+    }
+
+    &__form{
+        position: relative;
+
+    }
+
+    &__btn{
+        border: none;
+        background: #FFB624;
+        border-radius: 50%;
+        width: 28px;
+        height: 28px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 12px;
+    }
+   
+
+}
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #407980;
+    font-size: 18px;
+    color: #fff;
+    padding: 20px;
 }
 
 
