@@ -1,6 +1,7 @@
 body{
     font-family: "DM Sans", sans-serif;
     font-size: 20px;
+    margin: 0 auto;
 }
 ul{
     list-style: none;
@@ -16,6 +17,7 @@ a{
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
+    padding: 0 15px;
 }
 p{
     margin: 0;
@@ -37,7 +39,8 @@ p{
     }
     &__menu{
         display: flex;
-        gap: 80px;
+        gap: 76px;
+        padding-right: 101px;
 
     }
 
@@ -53,6 +56,10 @@ p{
     &__nav{
         display: flex;
         gap: 30px;
+        a{
+            display: flex;
+            align-items: center;
+        }
     }
 
 }
@@ -64,11 +71,14 @@ p{
 .aside{
     &__col{
         display: flex;
-        height: 560px;
+       
+    }
+    &__img{
+        display: block;
     }
     &__right{
         background-color: #154444;
-        padding: 100px 18px 137px 100px;
+        padding: 100px 0 137px 100px;
         box-sizing: border-box;
     }
     &__title{
@@ -103,14 +113,21 @@ p{
         font-weight: 700;
         font-size: 32px;
         color: #244d4d;
-        margin-bottom: 40px;
+        margin-bottom: 24px;
     }
     &__icon{
         display: flex;
-        justify-content: center;
-        gap: 100px;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        
         
 
+    }
+    &__img{
+        display: flex;
+        padding: 16px;
     }
 }
 
@@ -202,6 +219,7 @@ p{
     }
     &__left{
         position: relative;
+        margin-left: 12px;
 
         img{
             position: relative;
@@ -209,16 +227,7 @@ p{
         }
     }
 
-
-   &__below{
-    display: flex;
-    justify-content: space-between;
-   }
-   &__left{
-    margin-left: 12px;
-   }
-
-    &__behaind--top{
+     &__behaind--top{
         width: 190px;
         height: 85px;
         background-color:  #154444;
@@ -235,6 +244,18 @@ p{
         right: -11px;
     }
 
+   &__below{
+    display: flex;
+    justify-content: space-between;
+    gap: 147px;
+   }
+
+   
+   &__right{
+    max-width: 474px;
+    width: 100%;
+    padding-top: 35px;
+   }
    
 
     &__col{
@@ -242,8 +263,7 @@ p{
         display: flex;
          flex-wrap: wrap;
         margin: -15px;
-    //      display: grid;
-    // gap: 15px;
+
        
     }
 
@@ -256,15 +276,21 @@ p{
     }
 
     &__container{
-        width: 222px;
+        width: 100%;
         height: 90px;
         background-color: white;
+        display: block;
         border: 1.50px solid #d9dce5;
-        // padding: 15px;
-    //   display: grid;
-    //    grid-template-columns: 1fr 1fr;
+        cursor: pointer;
+       
        
         
+    }
+    &__img{
+        display: block;
+    }
+    &__img path{
+        fill: #666666;
     }
 
     
@@ -274,8 +300,8 @@ p{
         .catalog__text{
         color: #fff;
         }
-        .catalog__img{
-           color: #fff; 
+        .catalog__img path{
+            fill: #fff;
         }
 
         
@@ -471,9 +497,9 @@ p{
         padding: 14px 70px 13px 22px;
     }
 
-    &__form{
+    
+    &__wrap{
         position: relative;
-
     }
 
     &__btn{
@@ -492,8 +518,7 @@ p{
 }
 
 .copyright{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     border-top: 1px solid #407980;
     font-size: 18px;
     color: #fff;
@@ -514,6 +539,18 @@ p{
 
 
 .popular{
+    margin: 175px;
+    &__title{
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 163%;
+        color: #242424;
+    }
+    &__desc{
+        line-height: 135%;
+        color: #383738;
+        padding: 20px 0 95px;
+    }
     &__container{
         display: flex;
         flex-wrap: wrap;
@@ -534,5 +571,28 @@ p{
         
         
     }
+    &__btn{
+        padding: 8px 10px;
+        background-color:  #ecf4ff;
+        border-radius: 50%;
+        box-sizing: border-box;
+        border: none;
+        cursor: pointer;
+    }
+    &__link{
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 175%;
+        color: #fff;
+        background: #244d4d;
+        padding: 5px 14px;
+        border: none
+    }
+
+}
+
+
+@media (max-width:1230px){
 
 }

@@ -1,6 +1,7 @@
 body {
 font-family: "DM Sans", sans-serif;
 font-size: 20px;
+margin: 0 auto;
 }
 
 ul {
@@ -17,6 +18,7 @@ text-decoration: none;
 max-width: 1200px;
 width: 100%;
 margin: 0 auto;
+padding: 0 15px;
 }
 
 p {
@@ -37,7 +39,8 @@ color: #244d4d;
 }
 .header__menu {
 display: flex;
-gap: 80px;
+gap: 76px;
+padding-right: 101px;
 }
 .header__link {
 font-size: 16px;
@@ -50,14 +53,20 @@ opacity: 0.6;
 display: flex;
 gap: 30px;
 }
+.header__nav a {
+display: flex;
+align-items: center;
+}
 
 .aside__col {
 display: flex;
-height: 560px;
+}
+.aside__img {
+display: block;
 }
 .aside__right {
 background-color: #154444;
-padding: 100px 18px 137px 100px;
+padding: 100px 0 137px 100px;
 box-sizing: border-box;
 }
 .aside__title {
@@ -88,12 +97,18 @@ text-align: center;
 font-weight: 700;
 font-size: 32px;
 color: #244d4d;
-margin-bottom: 40px;
+margin-bottom: 24px;
 }
 .companies__icon {
 display: flex;
-justify-content: center;
-gap: 100px;
+align-items: center;
+justify-content: space-evenly;
+flex-wrap: wrap;
+box-sizing: border-box;
+}
+.companies__img {
+display: flex;
+padding: 16px;
 }
 
 .benefits__col {
@@ -177,17 +192,11 @@ color: #919090;
 }
 .catalog__left {
 position: relative;
+margin-left: 12px;
 }
 .catalog__left img {
 position: relative;
 z-index: 10;
-}
-.catalog__below {
-display: flex;
-justify-content: space-between;
-}
-.catalog__left {
-margin-left: 12px;
 }
 .catalog__behaind--top {
 width: 190px;
@@ -205,6 +214,16 @@ position: absolute;
 bottom: -10px;
 right: -11px;
 }
+.catalog__below {
+display: flex;
+justify-content: space-between;
+gap: 147px;
+}
+.catalog__right {
+max-width: 474px;
+width: 100%;
+padding-top: 35px;
+}
 .catalog__col {
 display: flex;
 flex-wrap: wrap;
@@ -216,10 +235,18 @@ padding: 15px;
 box-sizing: border-box;
 }
 .catalog__container {
-width: 222px;
+width: 100%;
 height: 90px;
 background-color: white;
+display: block;
 border: 1.5px solid #d9dce5;
+cursor: pointer;
+}
+.catalog__img {
+display: block;
+}
+.catalog__img path {
+fill: #666666;
 }
 .catalog__container:hover {
 background-color: #154444;
@@ -227,8 +254,8 @@ background-color: #154444;
 .catalog__container:hover .catalog__text {
 color: #fff;
 }
-.catalog__container:hover .catalog__img {
-color: #fff;
+.catalog__container:hover .catalog__img path {
+fill: #fff;
 }
 .catalog__text {
 color: #808080;
@@ -378,7 +405,7 @@ border: none;
 outline: none;
 padding: 14px 70px 13px 22px;
 }
-.footer__form {
+.footer__wrap {
 position: relative;
 }
 .footer__btn {
@@ -394,14 +421,27 @@ right: 12px;
 }
 
 .copyright {
-display: flex;
-justify-content: center;
+text-align: center;
 border-top: 1px solid #407980;
 font-size: 18px;
 color: #fff;
 padding: 20px;
 }
 
+.popular {
+margin: 175px;
+}
+.popular__title {
+font-weight: 700;
+font-size: 32px;
+line-height: 163%;
+color: #242424;
+}
+.popular__desc {
+line-height: 135%;
+color: #383738;
+padding: 20px 0 95px;
+}
 .popular__container {
 display: flex;
 flex-wrap: wrap;
@@ -418,4 +458,22 @@ padding: 30px 54px 26px 24px;
 .popular__line {
 display: flex;
 justify-content: space-between;
+}
+.popular__btn {
+padding: 8px 10px;
+background-color: #ecf4ff;
+border-radius: 50%;
+box-sizing: border-box;
+border: none;
+cursor: pointer;
+}
+.popular__link {
+cursor: pointer;
+font-weight: 500;
+font-size: 12px;
+line-height: 175%;
+color: #fff;
+background: #244d4d;
+padding: 5px 14px;
+border: none;
 }
