@@ -1,62 +1,68 @@
-body{
+body {
     font-family: "DM Sans", sans-serif;
     font-size: 20px;
     margin: 0 auto;
 }
-ul{
+
+ul {
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-.container{
+.container {
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding: 0 15px;
 }
-p{
+
+p {
     margin: 0;
 }
 
-.header{
-    &__row{
+.header {
+    &__row {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 44px 0 26px;
-        
+
     }
-    &__logo{
+
+    &__logo {
         font-family: "Montserrat", sans-serif;
         font-weight: 700;
         font-size: 24px;
         color: #244d4d;
     }
-    &__menu{
+
+    &__menu {
         display: flex;
         gap: 76px;
         padding-right: 101px;
 
     }
 
-    &__link{
+    &__link {
         font-size: 16px;
         color: #161616;
-        
+
     }
 
-    &__link:hover{
+    &__link:hover {
         opacity: 0.6;
     }
-    &__nav{
+
+    &__nav {
         display: flex;
         gap: 30px;
-        a{
+
+        a {
             display: flex;
             align-items: center;
         }
@@ -68,85 +74,95 @@ p{
 
 
 
-.aside{
-    &__col{
+.aside {
+    &__col {
         display: flex;
-       
+
     }
-    &__img{
+
+    &__img {
         display: block;
     }
-    &__right{
+
+    &__right {
         background-color: #154444;
         padding: 100px 0 137px 100px;
         box-sizing: border-box;
     }
-    &__title{
+
+    &__title {
         font-family: "Montserrat", sans-serif;
         font-weight: 700;
         font-size: 56px;
         color: #fff;
     }
-    &__desc{
+
+    &__desc {
         line-height: 125%;
         color: #fff;
         width: 68%;
         margin: 20px 0 35px 0;
     }
-    &__btn{
+
+    &__btn {
         display: inline-block;
         line-height: 125%;
         color: #154444;
         padding: 15px 25px;
         background-color: #fff;
-        
+
     }
 }
 
 
-.companies{
+.companies {
     margin-top: 140px;
 
 
-    &__title{
+    &__title {
         text-align: center;
         font-weight: 700;
         font-size: 32px;
         color: #244d4d;
         margin-bottom: 24px;
     }
-    &__icon{
+
+    &__icon {
         display: flex;
         align-items: center;
         justify-content: space-evenly;
         flex-wrap: wrap;
         box-sizing: border-box;
-        
-        
+
+
 
     }
-    &__img{
+
+    &__img {
         display: flex;
         padding: 16px;
     }
 }
 
 
-.benefits{
-    &__col{
+.benefits {
+    margin-top: 140px;
+
+    &__col {
         display: flex;
-        margin-top: 140px;
+
     }
 
-    &__left{
+    &__left {
         position: relative;
 
-        & img{
+        & img {
             position: relative;
             z-index: 10;
         }
     }
-    &__behaind{
+
+    &__behaind {
         position: absolute;
         top: 26px;
         left: 0;
@@ -154,50 +170,59 @@ p{
         height: 586px;
         background-color: #dee4e2;
     }
-    
-    &__title{
+
+    &__title {
         font-family: "Montserrat", sans-serif;
         font-weight: 700;
         font-size: 32px;
         line-height: 125%;
         color: #244d4d;
-        margin-bottom: 20px;
+        padding-bottom: 20px;
     }
-    &__desc{
+
+    &__desc {
         line-height: 125%;
         color: #444;
     }
-    &__right{
-        margin: 46px 0 0 135px;
+
+    &__right {
+        padding: 46px 0 0 135px;
+        box-sizing: border-box;
     }
-    &__box__row{
+
+    &__box__row {
         display: flex;
-    } 
-    &__box__col{
-        margin-left: 28px;
     }
-    &__box__title{
+
+    &__box__col {
+        padding-left: 28px;
+    }
+
+    &__box__title {
         font-family: "Montserrat", sans-serif;
         font-weight: 700;
         line-height: 130%;
         color: #244d4d;
-        margin: 35px 0 14px 0;
+        padding: 35px 0 14px 0;
+
     }
 
-    &__box__desc{
+    &__box__desc {
         font-size: 18px;
         line-height: 144%;
         color: #383738;
     }
 
 }
-    
+
 .catalog {
     margin-top: 140px;
-    &__upper{
+
+    &__upper {
         margin-bottom: 89px;
     }
-    &__title{
+
+    &__title {
         font-family: "Montserrat", sans-serif;
         font-weight: 700;
         font-size: 32px;
@@ -206,171 +231,185 @@ p{
         text-align: center;
         padding-bottom: 20px;
     }
-    &__menu{
+
+    &__menu {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 100px;
     }
-    &__item{
+
+    &__item {
         font-size: 24px;
         line-height: 113%;
         color: #919090;
     }
-    &__left{
+
+    &__left {
         position: relative;
         margin-left: 12px;
 
-        img{
+        img {
             position: relative;
             z-index: 10;
         }
     }
 
-     &__behaind--top{
+    &__behaind--top {
         width: 190px;
         height: 85px;
-        background-color:  #154444;
+        background-color: #154444;
         position: absolute;
         top: -9px;
         left: -12px;
     }
-    &__behaind--bottom{
+
+    &__behaind--bottom {
         width: 190px;
         height: 85px;
-        background-color:  #154444;
+        background-color: #154444;
         position: absolute;
         bottom: -10px;
         right: -11px;
     }
 
-   &__below{
-    display: flex;
-    justify-content: space-between;
-    gap: 147px;
-   }
-
-   
-   &__right{
-    max-width: 474px;
-    width: 100%;
-    padding-top: 35px;
-   }
-   
-
-    &__col{
-        
+    &__below {
         display: flex;
-         flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 147px;
+    }
+
+
+    &__right {
+        max-width: 474px;
+        width: 100%;
+        padding-top: 35px;
+    }
+
+
+    &__col {
+
+        display: flex;
+        flex-wrap: wrap;
         margin: -15px;
 
-       
+
     }
 
     &__ww {
         width: 50%;
         padding: 15px;
         box-sizing: border-box;
-        
-       
+
+
     }
 
-    &__container{
+    &__container {
         width: 100%;
         height: 90px;
         background-color: white;
         display: block;
         border: 1.50px solid #d9dce5;
         cursor: pointer;
-       
-       
-        
+
+
+
     }
-    &__img{
+
+    &__img {
         display: block;
     }
-    &__img path{
+
+    &__img path {
         fill: #666666;
     }
 
-    
 
 
-    &__container:hover{
-        .catalog__text{
-        color: #fff;
+
+    &__container:hover {
+        .catalog__text {
+            color: #fff;
         }
-        .catalog__img path{
+
+        .catalog__img path {
             fill: #fff;
         }
 
-        
+
         background-color: #154444;
     }
 
-    
 
 
-    &__text{
+
+    &__text {
         color: #808080;
     }
-    
+
 
 
 }
 
 
-.hero{
-    &__row{
+.hero {
+    margin-top: 166px;
+
+    &__row {
         display: flex;
-        margin-top: 166px;
-        
-        
+
+
+
     }
 
-    &__left{
+    &__left {
         position: relative;
     }
 
-    &__img{
-       position: absolute;
+    &__img {
+        position: absolute;
         z-index: 10;
         left: 105px;
     }
-    &__behaind{
+
+    &__behaind {
         width: 492px;
         height: 492px;
         border-radius: 50%;
-        background-color: #244d4d;;
-        
+        background-color: #244d4d;
+        ;
+
 
     }
 
-    &__right{
-       padding: 105px 0 195px 172px;
-       box-sizing: border-box;
+    &__right {
+        padding: 105px 0 94px 172px;
+        box-sizing: border-box;
     }
-    &__title{
+
+    &__title {
         font-family: "Monoton", sans-serif;
         font-size: 32px;
         line-height: 150%;
         color: #242424;
     }
-    &__desc{
+
+    &__desc {
         padding: 20px 0 40px;
         line-height: 135%;
     }
 
-    &__user{
+    &__user {
         display: flex;
 
     }
 
-    &__name{
+    &__name {
         padding-left: 10px;
         box-sizing: border-box;
         font-size: 16px;
-        p{
+
+        p {
             font-size: 14px;
         }
     }
@@ -378,15 +417,18 @@ p{
 
 }
 
-.subscribe{
-    &__row{
-        background-color:  #f4f6f6;
+.subscribe {
+    margin-top: 100px;
+
+    &__row {
+        background-color: #f4f6f6;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    &__title{
+
+    &__title {
         font-family: "Montserrat", sans-serif;
         font-weight: 700;
         font-size: 32px;
@@ -394,48 +436,52 @@ p{
         text-align: center;
         color: #222;
         padding: 68px 0 20px;
-    
+
     }
 
-    &__desc{
+    &__desc {
         font-size: 16px;
         line-height: 150%;
         text-align: center;
         color: #222;
         padding-bottom: 40px;
     }
-    &__form{
+
+    &__form {
         padding-bottom: 55px;
     }
-    &__register{
+
+    &__register {
         background-color: #fff;
         padding: 9px 19px 7px 45px;
-        
+
     }
-    &__input{
+
+    &__input {
         border: none;
         outline: none;
         font-size: 16px;
         line-height: 138%;
         color: #bababa;
         padding-right: 81px;
-       
+
 
     }
-    &__register{
+
+    &__register {
         position: relative;
     }
- 
-    &__bf:before{
-        content:url("../img/subscribe.svg");
+
+    &__bf:before {
+        content: url("../img/subscribe.svg");
         position: absolute;
         top: 50%;
         left: 17px;
         transform: translateY(-50%);
-        
+
     }
 
-    &__btn{
+    &__btn {
         font-weight: 500;
         font-size: 16px;
         line-height: 138%;
@@ -449,31 +495,33 @@ p{
 
 
 
-.footer{
-    background-color:  #305f64;
+.footer {
+    background-color: #305f64;
     margin-top: 98px;
-    &__top{
+
+    &__top {
         display: flex;
         padding: 100px 0 40px;
         justify-content: space-between;
     }
-  
 
-    &__logo{
+
+    &__logo {
         font-family: "Montserrat", sans-serif;
         font-weight: 700;
         font-size: 24px;
         color: #fff;
         padding-bottom: 24px;
     }
-    &__desc{
+
+    &__desc {
         font-size: 18px;
         line-height: 144%;
         color: #fff;
         padding-bottom: 40px;
     }
 
-    &__col--title{
+    &__col--title {
         font-family: "Montserrat", sans-serif;
         font-weight: 700;
         line-height: 130%;
@@ -481,28 +529,29 @@ p{
         padding-bottom: 24px;
     }
 
-    &__link{
+    &__link {
         font-size: 18px;
         color: #fff;
+
     }
 
-    &__img{
+    &__img {
         display: flex;
         gap: 15px;
     }
 
-    &__input{
+    &__input {
         border: none;
         outline: none;
         padding: 14px 70px 13px 22px;
     }
 
-    
-    &__wrap{
+
+    &__wrap {
         position: relative;
     }
 
-    &__btn{
+    &__btn {
         border: none;
         background: #FFB624;
         border-radius: 50%;
@@ -513,11 +562,11 @@ p{
         transform: translateY(-50%);
         right: 12px;
     }
-   
+
 
 }
 
-.copyright{
+.copyright {
     text-align: center;
     border-top: 1px solid #407980;
     font-size: 18px;
@@ -533,53 +582,61 @@ p{
 
 //    box-sizing: border-box;
 //    border: 2px solid rebeccapurple;
- 
+
 
 // }
 
 
-.popular{
-    margin: 175px;
-    &__title{
+.popular {
+    margin-top: 175px;
+
+    &__title {
         font-weight: 700;
         font-size: 32px;
         line-height: 163%;
         color: #242424;
     }
-    &__desc{
+
+    &__desc {
         line-height: 135%;
         color: #383738;
         padding: 20px 0 95px;
     }
-    &__container{
+
+    &__container {
         display: flex;
         flex-wrap: wrap;
         margin: -15px;
     }
-    &__col{
+
+    &__col {
         width: 33.3%;
         box-shadow: 0 13px 26px 0 rgba(0, 0, 0, 0.07);
-       
+
     }
-    &__bottom{
+
+    &__bottom {
         box-sizing: border-box;
         padding: 30px 54px 26px 24px;
     }
-    &__line{
+
+    &__line {
         display: flex;
         justify-content: space-between;
-        
-        
+
+
     }
-    &__btn{
+
+    &__btn {
         padding: 8px 10px;
-        background-color:  #ecf4ff;
+        background-color: #ecf4ff;
         border-radius: 50%;
         box-sizing: border-box;
         border: none;
         cursor: pointer;
     }
-    &__link{
+
+    &__link {
         cursor: pointer;
         font-weight: 500;
         font-size: 12px;
@@ -593,6 +650,4 @@ p{
 }
 
 
-@media (max-width:1230px){
-
-}
+@media (max-width:1230px) {}
