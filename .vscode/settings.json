@@ -1,3 +1,4 @@
 {
-    "Scss2css.indentWidth": 0
+    "Scss2css.indentWidth": 0,
+    "Scss2css.output": "expanded"
 }
