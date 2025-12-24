@@ -233,6 +233,20 @@ cursor: pointer;
 .popular__button:nth-child(1n) {
 margin-bottom: 20px;
 }
+.popular__active {
+padding: 8px 10px;
+background-color: #ecf4ff;
+border-radius: 50%;
+box-sizing: border-box;
+border: none;
+cursor: pointer;
+}
+.popular__active.js-active {
+background-color: #ef5423;
+}
+.popular__active.js-active path {
+fill: white;
+}
 .popular__link {
 cursor: pointer;
 font-weight: 500;
@@ -240,7 +254,7 @@ font-size: 12px;
 line-height: 175%;
 color: #fff;
 background: #244d4d;
-padding: 5px 14px;
+padding: 8px 16px;
 border: none;
 }
 
@@ -789,6 +803,9 @@ font-size: 25px;
 }
 }
 @media (max-width: 600px) {
+.header__link {
+font-size: 30px;
+}
 .companies__icon li {
 width: 50%;
 }
@@ -832,6 +849,9 @@ padding: 15px 20px;
 }
 }
 @media (max-width: 390px) {
+.aside__title {
+font-size: 28px;
+}
 .subscribe br {
 display: none;
 }

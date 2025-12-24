@@ -26,4 +26,12 @@ window.addEventListener("load", () => {
     burger.classList.toggle("js-active");
     menu.classList.toggle("js-active");
   });
+
+  const active = document.querySelectorAll(".popular__active");
+  active.forEach(active => {
+    active.addEventListener("click", () => {
+    active.classList.toggle("js-active");
+  });
+});
+
 });
