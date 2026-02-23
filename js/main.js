@@ -20,12 +20,18 @@ window.addEventListener("load", () => {
     },
   });
 
+
+
   const burger = document.querySelector(".header__burger");
   const menu = document.querySelector(".header__menu");
+  const body = document.body;
   burger.addEventListener("click", () => {
+    body.classList.toggle('no-scroll');
     burger.classList.toggle("js-active");
     menu.classList.toggle("js-active");
   });
+
+  
 
   const active = document.querySelectorAll(".popular__active");
   active.forEach(active => {

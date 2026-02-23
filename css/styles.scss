@@ -4,6 +4,10 @@ body {
     margin: 0 auto;
     background: #fcfbff;
 }
+body.no-scroll {
+    overflow: hidden;
+    height: 100vh; 
+}
 
 ul {
     list-style: none;
@@ -78,6 +82,7 @@ p {
         background-color: #fff;
         border: none;
         cursor: pointer;
+        pointer-events: none;
     }
 
 }
@@ -844,6 +849,9 @@ p {
 
 @media (max-width: 900px) {
     .header {
+        &__burger{
+            pointer-events: auto;
+        }
         &__menu{
         flex-direction: column;
         position: absolute;
